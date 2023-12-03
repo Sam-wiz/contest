@@ -7,46 +7,51 @@
     <script src="https://kit.fontawesome.com/e4ed2c37c1.js" crossorigin="anonymous"></script>
     <link href="images/favicon.png" rel="icon">
     <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
     <title>Web'D Hackathon</title>
 </head>
 <body>
-    <header>
-        <h1 class="Heading">LOREM_IMPSUM</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#Services">Services</a></li>
-                <li><a href="#Portfolio">Portfolio</a></li>
-                <li><a href="#Team">Team</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Dropdown link</a>
-                    <div class="dropdown-content">
-                        <!-- Dropdown content goes here -->
-                        <a href="#">Option 1</a>
-                        <a href="#">Option 2</a>
-                        <a href="#">Option 3</a>
-                    </div>
-                </li>
-                <li><a href="#Contact">Contact</a></li>
-                <li><a href="" id="GST">Get Started</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="Home">
+        <header>
+            <h1 class="Heading">LOREM_IMPSUM</h1>
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Team">Team</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Dropdown link <i class="fa-solid fa-arrow-down"></i></a>
+                        <div class="dropdown-content">
+                            <!-- Dropdown content goes here -->
+                            <a href="#">Option 1</a>
+                            <a href="#">Option 2</a>
+                            <a href="#">Option 3</a>
+                        </div>
+                    </li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="" id="GST" class="get-started">Get Started</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
     <main>
         <div class="content">
             <article>
                 <h2 class="inmain1">LOREM_IMPSUM</h2>
                 <p class="inmain2">LOREM_IMPSUM</p>
                 <div class="button-container">
-                    <button id="GST">Get Started</button>
-                    <a href=""><p class="watch-video">Watch Video</p></a>
+                    <button id="GSTT">Get Started</button>
+                    <a href=""><p class="watch-video"><i class="fa-regular fa-circle-play"></i>  Watch Video</p></a>
                 </div>
             </article>
         </div>
         <section>
         <aside>
-            <img src="images/skills.png" alt="skills">
+            <img src="images/skills.png" alt="skills" class="skills">
         </aside>
     </section>
     </main>
@@ -63,9 +68,9 @@
         <div class="aboutleft">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nemo aliquam laborum pariatur, voluptatum quo illo sed, iure rem saepe harum temporibus unde. Aperiam assumenda illo harum doloribus. Ipsum, aspernatur.</p>
             <ul>
-                <li>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. </li>
-                <li>Por scientie, musica, sport etc, litot Europa usa li sam vocabular.</li>
-                <li>Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.</li>
+                <li><i class="fa-solid fa-check-double"></i> Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. </li>
+                <li><i class="fa-solid fa-check-double"></i> Por scientie, musica, sport etc, litot Europa usa li sam vocabular.</li>
+                <li><i class="fa-solid fa-check-double"></i> Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.</li>
             </ul>
         </div >
         <div class="aboutright">
@@ -74,34 +79,55 @@
         </div>
     </div>
     <section id="why-us">
-
-  
+    <div class="why">
+        <div class="why-left">
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugiat nobis culpa. Natus quo libero, recusandae delectus <strong>est voluptates corporis ipsa vero rem totam cumque ad, commodi beatae, odio enim!</strong></h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, architecto natus molestiae rem nulla cumque dolor sequi doloremque inventore, laborum officiis sed facere dolores dignissimos reprehenderit, aspernatur mollitia. Iste, quas.</p>
+            <div class="faq">
+                <div class="question" onclick="toggleAnswer('answer1')">Q1: What is Lorem Ipsum?</div>
+                <div class="answer" id="answer1">A1: Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+            </div>
+    
+            <div class="faq">
+                <div class="question" onclick="toggleAnswer('answer2')">Q2: Why do we use it?</div>
+                <div class="answer" id="answer2">A2: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+            </div>
+    
+            <div class="faq">
+                <div class="question" onclick="toggleAnswer('answer3')">Q3: Where does it come from?</div>
+                <div class="answer" id="answer3">A3: Contrary to popular belief, Lorem Ipsum is not simply random text.</div>
+            </div>
+        </div>
+        <div class="why-right">
+            <img src="images/why-us.png" alt="why-us">
+        </div>
+    </div>
     </section>
     <section>
     <div id="Services">
         <h3>Services</h3>
-        <p>Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues. It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es.Li Europan lingues es membres del sam familie.</p>
-        <div class="box">
+        <p class="ser">Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues. It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un simplificat Angles, quam un skeptic .</p>
+        <div class="boxi">
             <i class="fa-solid fa-basketball"></i>
             <h2>Heading 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quaerat alias soluta provident illo quae illum, repellat adipisci doloribus accusamus quidem libero incidunt eligendi quam voluptas voluptatibus, accusantium ullam sunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. .</p>
         </div>
-        <div class="box">
+        <div class="boxi">
             <i class="fa-regular fa-file-lines"></i>
             <h2>Heading 2</h2>
             <p>Quisque eget nunc ac justo faucibus varius at vitae lac.us
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae distinctio non unde accusamus excepturi quisquam eius exercitationem voluptates vitae numquam laboriosam soluta, voluptatum illum quo, laudantium, commodi vel? Impedit, nesciunt.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             </p>
         </div>
-        <div class="box">
+        <div class="boxi">
             <i class="fa-solid fa-gauge-high"></i>
             <h2>Heading 3</h2>
-            <p>Curabitur aliquet sapien id justo consequat, vel fringilla velit efficitur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis modi aliquam, laboriosam suscipit, accusantium eum ab voluptatibus corporis veritatis nostrum voluptate ad cum voluptatem iure esse sapiente nobis adipisci dolorum.</p>
+            <p>Curabitur aliquet sapien id justo consequat, vel fringilla velit efficitur. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
         </div>
-        <div class="box">
+        <div class="boxi">
             <i class="fa-solid fa-layer-group"></i>
             <h2>Heading 4</h2>
-            <p>Pellentesque vel purus at lectus malesuada congue ut sit amet ligula. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, nobis ratione? Ad architecto ipsum consequatur, esse iure modi saepe? Laboriosam repudiandae blanditiis fuga amet porro accusantium iusto? Accusamus, debitis officia.</p>
+            <p>Pellentesque vel purus at lectus malesuada congue ut sit amet ligula. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, nobis ratione? </p>
         </div>
     </div>
 </section>
@@ -109,107 +135,155 @@
             <div class="container" data-aos="zoom-in">
       
               <div class="row">
-                <div class="col-lg-9 text-center text-lg-start">
-                  <h3>Call To Action</h3>
+                  <h3 id="act">Call To Action</h3>
                   <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                <div class="col-lg-3 cta-btn-container text-center">
-                  <a class="cta-btn align-middle" href="#">Call To Action</a>
+                <div class="t">
+                  <a class="a" href="#">Call To Action</a>
                 </div>
-              </div>
-      
             </div>
           </section>
     
     <h3>Portfolio</h3>
     <div id="Portfolio">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quas error esse dolores minima mollitia, quae possimus quasi vel atque tempore iste facere deserunt dignissimos cupiditate illo, porro ea debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, veritatis esse reiciendis inventore nulla perspiciatis expedita, et, aliquid laborum alias voluptas illo architecto quo! Provident qui quia velit eius praesentium.</p>
-        <button>All</button>
-        <button>App</button>
-        <button>Card</button>
-        <button>Web</button>
-        <div>
-
-        </div>
+       <p> This section needs a framework to make like react. </p>
     </div>
+    <div id="Team">
     <h3>Team</h3>
     <section>
-        <div id="Team">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
-        <section class="team section-bg">
-            <div class="team-member">
-                <div class="member d-flex align-items-start">
-                    <div class="pic"><img src="images/team/team-1.jpg" class="img-fluid" alt=""></div>
-                    <div class="member-info">
-                        <h4>Walter White</h4>
-                        <span>Chief Executive Officer</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                        <div class="social">
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <p style="text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit magni sint maiores illo necessitatibus corrupti reiciendis nam aut reprehenderit eos a aperiam molestias voluptatem distinctio, architecto perspiciatis. Doloribus, error doloremque.lorem</p>
+        <div class="container">
+            <div class="box">
+                <img src="images/team/team-1.jpg" alt="Image 1">
+                <div class="box-content">
+                    <h2>Name 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum justo nec turpis hendrerit.</p>
+                    <div class="soc">
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
                             <a href=""><i class="fa-brands fa-instagram"></i></a>
                             <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="team-member">
-                <div class="member d-flex align-items-start">
-                    <div class="pic"><img src="images/team/team-2.jpg" class="img-fluid" alt=""></div>
-                    <div class="member-info">
-                        <h4>Sarah Jhonson</h4>
-                        <span>Product Manager</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
-                        <div class="social">
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+        
+            <div class="box">
+                <img src="images/team/team-2.jpg" alt="Image 2">
+                <div class="box-content">
+                    <h2>Name 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum justo nec turpis hendrerit.</p>
+                    <div class="soc">
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
                             <a href=""><i class="fa-brands fa-instagram"></i></a>
                             <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="team-member">
-                <div class="member d-flex align-items-start">
-                    <div class="pic"><img src="images/team/team-3.jpg" class="img-fluid" alt=""></div>
-                    <div class="member-info">
-                        <h4>William Anderson</h4>
-                        <span>CTO</span>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
-                        <div class="social">
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        
+        <div class="container">
+            <div class="box">
+                <img src="images/team/team-3.jpg" alt="Image 3">
+                <div class="box-content">
+                    <h2>Name 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum justo nec turpis hendrerit.</p>
+                    <div class="soc">
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
                             <a href=""><i class="fa-brands fa-instagram"></i></a>
                             <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="team-member">
-                <div class="member d-flex align-items-start">
-                    <div class="pic"><img src="images/team/team-4.jpg" class="img-fluid" alt=""></div>
-                    <div class="member-info">
-                        <h4>Amanda Jepson</h4>
-                        <span>Accountant</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                        <div class="social">
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+        
+            <div class="box">
+                <img src="images/team/team-4.jpg" alt="Image 4">
+                <div class="box-content">
+                    <h2>Name 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum justo nec turpis hendrerit.</p>
+                    <div class="soc">
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
                             <a href=""><i class="fa-brands fa-instagram"></i></a>
                             <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+</div>
+    <section>
+        <h3>Pricing</h3>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempora et id itaque, iusto corrupti sit maxime asperiores est dicta assumenda distinctio cum illum aperiam doloremque sapiente a officiis expedita?</p>
+        <div class="pr">
+            <div class="pr1">
+                <h5>Free Plan</h5>
+                <h2>$0</h2>
+                <p class="pm">per month</p>
+                <p class="lis"><i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet consectetur </p>
+                <p class="lis"><i class="fa-solid fa-check"></i>quas quos aspernatur sequi possimus odit tenetur tempora. </p>
+                <p class="lis"><i class="fa-solid fa-check"></i>Molestiae, atque dolore soluta fugiat quae sunt </p>
+                <p class="lis"><i class="fa-solid fa-xmark"></i><s>dolorum dolor accusantium nemo animi.</s></p>
+                <p class="lis"><i class="fa-solid fa-xmark"></i><s>olorum dolor accusantium nemo animi.</s></p>
+
+                <a href="" id="GST">Get Started</a>
+
+            </div>
+            <div class="pr2">
+                <h5>Buisness Plan</h5>
+                <h2>$29</h2>
+                <p class="pm">per month</p>
+                <p class="lis"><i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet consectetur </p>
+                <p class="lis"><i class="fa-solid fa-check"></i>quas quos aspernatur sequi possimus odit tenetur tempora. </p>
+                <p class="lis"><i class="fa-solid fa-check"></i>Molestiae, atque dolore soluta fugiat quae sunt </p>
+                <p class="lis"><i class="fa-solid fa-check"></i>dolorum dolor accusantium nemo animi.</p>
+                <p class="lis"><i class="fa-solid fa-check"></i>dolorum dolor accusantium nemo animi.</p>
+
+                <a href="" id="GST">Get Started</a>
+            </div>
+            <div class="pr3">
+                <h5>Developer Plan</h5>
+                <h2>$41</h2>
+                <p class="pm">per month</p>
+                <p class="lis"><i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet consectetur </p>
+                <p class="lis"><i class="fa-solid fa-check"></i>quas quos aspernatur sequi possimus odit tenetur tempora. </p>
+                <p class="lis"><i class="fa-solid fa-check"></i>Molestiae, atque dolore soluta fugiat quae sunt </p>
+                <p class="lis"><i class="fa-solid fa-check"></i>dolorum dolor accusantium nemo animi.</p>
+                <p class="lis"><i class="fa-solid fa-check"></i>dolorum dolor accusantium nemo animi.</p>
+
+                <a href="" id="GST">Get Started</a>
+            </div>
+        </div>
+    </section>
+    <section id="FaQ">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer('answer1')">Q1: What is Lorem Ipsum?</div>
+            <div class="answer" id="answer1">A1: Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer('answer2')">Q2: Why do we use it?</div>
+            <div class="answer" id="answer2">A2: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer('answer3')">Q3: Where does it come from?</div>
+            <div class="answer" id="answer3">A3: Contrary to popular belief, Lorem Ipsum is not simply random text.</div>
+        </div>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer('answer2')">Q2: Why do we use it?</div>
+            <div class="answer" id="answer2">A2: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
         </div>
     </section>
     <section id="ContactSection">
         <h3>Contact Us</h3>
+        <p style="text-align: center;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         <div id="Contact" class="contact-container">
+            
             <div class="contact-info">
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                
                 <div class="info">
                     <div class="address">
                         <i class="bi bi-geo-alt"></i>
@@ -233,113 +307,105 @@
                 </div>
             </div>
     
-            <div class="contact-form">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <label for="name">Your Name</label>
-                            <input type="text" name="name" class="form-control" id="name" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="email">Your Email</label>
-                            <input type="email" class="form-control" name="email" id="email" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" class="form-control" name="subject" id="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea class="form-control" name="message" rows="10" required></textarea>
-                    </div>
-                    <div class="my-3">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your message has been sent. Thank you!</div>
-                    </div>
-                    <div class="text-center"><button type="submit">Send Message</button></div>
+            <div class="container-contact">
+                <form action="/submit_form">
+                  <label for="fname">Your Name</label>
+                  <input type="text" id="fname" name="fname">
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" name="email">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" style="height:100px"></textarea>
+                  <input type="submit" value="Send Message">
                 </form>
+              </div>
+        </div>
+    </section>
+    <section >
+        <div>
+            <h3>Join our NewsLetter</h3>
+            <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempora veniam dolorum commodi reiciendis. </p>
+            <div class="container-news">
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <input type="button" value="Subscribe">
             </div>
         </div>
     </section>
     <footer id="main-footer">
-
-        <div class="newsletter-section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <h4>Join Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                        <form action="" method="post">
-                            <input type="email" name="email" placeholder="Your email">
-                            <input type="submit" value="Subscribe">
-                        </form>
-                    </div>
+        <div class="foot">
+            <div class="foot1">
+                <h5>Idk</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nam numquam ipsum facilis exercitat</p>
+            </div>
+            <div class="foot2">
+                <h5>Useful Links</h5>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Terms of service</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="foot3">
+                <h5>Our Services</h5>
+                <ul>
+                    <li><a href="">Web Design</a></li>
+                    <li><a href="">Web Development</a></li>
+                    <li><a href="">Marketing</a></li>
+                    <li><a href="">Graphic Design</a></li>
+                </ul>
+            </div>
+            <div class="foot4">
+                <h5>Our social networks</h5>
+                <div class="soc">
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
-    
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 footer-section contact-info">
-                        <h4>lorem</h4>
-                        <p>
-                            A108 Adam Street <br>
-                            New York, NY 535022<br>
-                            United States <br><br>
-                            <strong>Phone:</strong> 0100100110<br>
-                            <strong>Email:</strong> hi@howru.com<br>
-                        </p>
-                    </div>
-        
-                    <div class="col-lg-3 col-md-6 footer-section footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Terms of service</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                        </ul>
-                    </div>
-        
-                    <div class="col-lg-3 col-md-6 footer-section social-links">
-                        <h4>Our Social Networks</h4>
-                        <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-3 col-md-6 footer-section footer-links">
-                        <h4>Our Services</h4>
-                        <ul>
-                            <li><a href="#">Web Design</a></li>
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">Product Management</a></li>
-                            <li><a href="#">Marketing</a></li>
-                            <li><a href="#">Graphic Design</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div id="footer">
+            <p>&copy; SST. All rights reserved. Made by Samrudh.</p>
         </div>
-    
-        <div class="footer-bottom container clearfix">
-            <div class="copyright">
-                &copy; Copyright <strong><span>Samrudh</span></strong>. All Rights Reserved
-            </div>
-            <div class="credits">
-                Designed by <a href="#">Samrudh</a>
-            </div>
-        </div>
+                       
     </footer>
-    
+    <script>
+        function toggleAnswer(answerId) {
+            const answer = document.getElementById(answerId);
+            const activeAnswers = document.querySelectorAll('.answer.active');
+
+            activeAnswers.forEach(activeAnswer => {
+                if (activeAnswer.id !== answerId) {
+                    activeAnswer.classList.remove('active');
+                }
+            });
+
+            answer.classList.toggle('active');
+        }
+    </script>
+        <script>
+            // Smooth scroll script
+            document.addEventListener('DOMContentLoaded', function () {
+                const links = document.querySelectorAll('a[href^="#"]');
         
+                links.forEach(link => {
+                    link.addEventListener('click', function (e) {
+                        e.preventDefault();
+        
+                        const targetId = this.getAttribute('href').substring(1);
+                        const targetElement = document.getElementById(targetId);
+        
+                        if (targetElement) {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+            });
+        </script>
 </body>
 </html>
